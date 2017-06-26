@@ -18,7 +18,8 @@ footer {
 }
 
 a {
-    color: #777777;
+    color: #b7ffe5;
+    ;
 }
 
 a:hover {
@@ -38,10 +39,16 @@ form {
 .page-header {
     margin: 0;
     padding: 0;
-    position: relative;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    background: #ffffff;
+    background: black;
     border-bottom: 2px solid #cccccc;
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 5;
 }
 
 .header {
@@ -81,10 +88,14 @@ form {
 }
 
 .jumbotron {
+    margin-top: 80px;
     margin-bottom: 0;
     padding-bottom: 200px;
     position: relative;
-    background-image: url("../images/pixel_weave.png");
+    /*background-image: url("../images/pixel_weave.png");*/
+    background-image: url("http://archive.boston.com/sports/baseball/redsox/extras/extra_bases/dec11sports/FenwayPark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -112,7 +123,7 @@ form {
     overflow-y: hidden;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
     padding: 1% 5% 1% 5%;
-    background: white;
+    background: black;
     margin-left: 10%;
     margin-bottom: 5%;
     display: inline-block;
@@ -143,9 +154,8 @@ form {
     display: inline-block;
     margin-left: 10%;
     margin-bottom: 5%;
-    background: #ffffff;
+    background: black;
     padding: 10px 20px 20px 20px;
-    opacity: 0.8;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
     vertical-align: top;
 }
@@ -169,7 +179,7 @@ form {
 }
 
 .fa-linkedin {
-    color: black;
+    color: white;
 }
 
 .fa-stack-overflow {
@@ -283,6 +293,7 @@ input::-webkit-input-placeholder {
     text-align: center;
     font-size: 19px;
     color: white;
+    white-space: nowrap;
 }
 
 #port_title {
@@ -303,11 +314,11 @@ input::-webkit-input-placeholder {
 }
 
 #rgb {
-    background-image: url("http://lorempixel.com/125/125/abstract/2/cc");
+    background-image: url(../images/rgb.jpg);
 }
 
 #rpg {
-    background-image: url(https://images.unsplash.com/photo-1495114439165-3fc880396f37?dpr=1&auto=compress,format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=&bg=);
+    background-image: url(../images/rpg.jpg);
 }
 
 #trivia {
@@ -319,7 +330,7 @@ input::-webkit-input-placeholder {
 }
 
 #hang {
-    background-image: url(https://images.unsplash.com/photo-1490773996481-9ff25c7d9484?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=&bg=);
+    background-image: url(../images/hangpost.jpg);
 }
 
 #rock {
@@ -433,6 +444,9 @@ input::-webkit-input-placeholder {
 }
 
 @media (max-width: 640px) {
+    .biotext {
+        margin-top: 12%;
+    }
     .header {
         width: 100%;
         margin-left: 0;
@@ -451,10 +465,12 @@ input::-webkit-input-placeholder {
     .external1 {
         display: block;
         width: 92%;
-        background-color: white;
+        background-color: black;
         margin-left: 4%;
         text-align: center;
-        padding: 4%;
+        padding: 3%;
+        border-left: 1px solid teal;
+        border-right: 1px solid teal;
     }
     .external1 span {
         margin-left: 5%;
