@@ -93,7 +93,7 @@ form {
     padding-bottom: 200px;
     position: relative;
     /*background-image: url("../images/pixel_weave.png");*/
-    background-image: url("http://archive.boston.com/sports/baseball/redsox/extras/extra_bases/dec11sports/FenwayPark.jpg");
+    background-image: url(../images/fenwaypark.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
