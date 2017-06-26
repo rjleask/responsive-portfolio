@@ -469,6 +469,7 @@ input::-webkit-input-placeholder {
         margin-left: 4%;
         text-align: center;
         padding: 3%;
+        white-space: nowrap;
         border-left: 1px solid teal;
         border-right: 1px solid teal;
     }
@@ -494,5 +495,12 @@ input::-webkit-input-placeholder {
     #info {
         margin-left: 0%;
         margin-right: 0%;
+    }
+}
+
+@media (max-width: 325px) {
+    .external1 {
+        margin-left: 0;
+        border: none;
     }
 }
